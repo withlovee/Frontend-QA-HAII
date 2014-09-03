@@ -151,9 +151,26 @@ a:hover{
 	.wrapper{
 		overflow: hidden;
 	}
+	.status{
+		float: left;
+		padding-right: 10px;
+		padding-top: 5px;
+		i{
+			font-size: 35px;
+			color: #ccc;
+		}
+		.glyphicon-remove-sign{
+			color: #98c9f3;
+		}
+		.glyphicon-ok-sign{
+			color: #f3989f;
+		}
+	}
+	.content{
+		float: left;
+	}
 	.list-group-item{
 		.operations{
-			display: none;
 			float: right;
 			font-size: 1.5em;
 			span{
@@ -169,10 +186,17 @@ a:hover{
 			float: left;
 		}
 		.list-group-item-heading{
-			td{
+			span{
 				font-size: 1.3em;
 				padding-right: 15px;
 				color: #5f6b72;
+				display: inline-block;
+			}
+			.station{
+				width: 200px;
+			}
+			.problem{
+				width: 120px;
 			}
 		}
 		&:hover{
@@ -205,12 +229,16 @@ a:hover{
 	background-color: #f5f5f5;
 	border: 1px solid #ddd;
 	border-top: 0;
+	margin-bottom: 20px;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
 	background-color: #f5f5f5;
 }
 .filters{
 	margin: 0 0 10px 0;
+}
+
+#gbox_list48{
 }
 /*-------------------------  -------------------------*/
 @media (min-width: 768px){

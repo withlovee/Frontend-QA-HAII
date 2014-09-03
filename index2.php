@@ -2,8 +2,8 @@
 		<div class="page-header">
 			<h1 class="left">Monitor</h1>
 			<div class="btn-group right">
-				<a href="index2.php" class="btn btn-default">Flag ปัญหาแล้ว</a>
-				<a href="index.php" class="btn btn-default active">ยังไม่ Flag ปัญหา</a>
+				<a href="index2.php" class="btn btn-default active">Flag ปัญหาแล้ว</a>
+				<a href="index.php" class="btn btn-default">ยังไม่ Flag ปัญหา</a>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -68,7 +68,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-question-sign"></i>
+									<i class="glyphicon glyphicon-ok-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -92,7 +92,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-question-sign"></i>
+									<i class="glyphicon glyphicon-ok-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -116,79 +116,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-question-sign"></i>
-								</div>
-								<div class="content">
-									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
-									<p class="list-group-item-heading">
-										<span class="station">สถานีชี1 (CHI001)</span>
-										<span class="problem">Flat Value</span>
-										<span class="value">111.91 แก้เป็น 100</span>
-									</p>
-								</div>
-							</div>
-							<div class="operations">
-								<span class="text">Error</span>
-								<span class="glyphicon glyphicon-ok"></span>
-								<span class="text">Not Error</span>
-								<span class="glyphicon glyphicon-remove"></span>
-							</div>
-						</div>
-						<!-- /.wrapper -->
-					</div>
-					<div class="list-group-item unread" data-toggle="modal" data-target="#detail">
-						<div class="wrapper">
-							<div class="text-wrapper">
-								<div class="status">
-									<i class="glyphicon glyphicon-question-sign"></i>
-								</div>
-								<div class="content">
-									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
-									<p class="list-group-item-heading">
-										<span class="station">สถานีป่าสัก2 (PAS002)</span>
-										<span class="problem">Missing Gap</span>
-										<span class="value">NA แก้เป็น 2.5</span>
-									</p>
-								</div>
-							</div>
-							<div class="operations">
-								<span class="text">Error</span>
-								<span class="glyphicon glyphicon-ok"></span>
-								<span class="text">Not Error</span>
-								<span class="glyphicon glyphicon-remove"></span>
-							</div>
-						</div>
-						<!-- /.wrapper -->
-					</div>
-					<div class="list-group-item unread" data-toggle="modal" data-target="#detail">
-						<div class="wrapper">
-							<div class="text-wrapper">
-								<div class="status">
-									<i class="glyphicon glyphicon-question-sign"></i>
-								</div>
-								<div class="content">
-									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
-									<p class="list-group-item-heading">
-										<span class="station">สถานีน่าน6 (NAN006)</span>
-										<span class="problem">Boundary</span>
-										<span class="value">0.86 แก้เป็น 1</span>
-									</p>
-								</div>
-							</div>
-							<div class="operations">
-								<span class="text">Error</span>
-								<span class="glyphicon glyphicon-ok"></span>
-								<span class="text">Not Error</span>
-								<span class="glyphicon glyphicon-remove"></span>
-							</div>
-						</div>
-						<!-- /.wrapper -->
-					</div>
-					<div class="list-group-item unread" data-toggle="modal" data-target="#detail">
-						<div class="wrapper">
-							<div class="text-wrapper">
-								<div class="status">
-									<i class="glyphicon glyphicon-question-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -266,7 +194,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-question-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -290,7 +218,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-question-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -314,7 +242,55 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-question-sign"></i>
+									<i class="glyphicon glyphicon-ok-sign"></i>
+								</div>
+								<div class="content">
+									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
+									<p class="list-group-item-heading">
+										<span class="station">สถานีชี1 (CHI001)</span>
+										<span class="problem">Flat Value</span>
+										<span class="value">111.91 แก้เป็น 100</span>
+									</p>
+								</div>
+							</div>
+							<div class="operations">
+								<span class="text">Error</span>
+								<span class="glyphicon glyphicon-ok"></span>
+								<span class="text">Not Error</span>
+								<span class="glyphicon glyphicon-remove"></span>
+							</div>
+						</div>
+						<!-- /.wrapper -->
+					</div>
+					<div class="list-group-item unread" data-toggle="modal" data-target="#detail">
+						<div class="wrapper">
+							<div class="text-wrapper">
+								<div class="status">
+									<i class="glyphicon glyphicon-remove-sign"></i>
+								</div>
+								<div class="content">
+									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
+									<p class="list-group-item-heading">
+										<span class="station">สถานีชี1 (CHI001)</span>
+										<span class="problem">Flat Value</span>
+										<span class="value">111.91 แก้เป็น 100</span>
+									</p>
+								</div>
+							</div>
+							<div class="operations">
+								<span class="text">Error</span>
+								<span class="glyphicon glyphicon-ok"></span>
+								<span class="text">Not Error</span>
+								<span class="glyphicon glyphicon-remove"></span>
+							</div>
+						</div>
+						<!-- /.wrapper -->
+					</div>
+					<div class="list-group-item unread" data-toggle="modal" data-target="#detail">
+						<div class="wrapper">
+							<div class="text-wrapper">
+								<div class="status">
+									<i class="glyphicon glyphicon-ok-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
