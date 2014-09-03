@@ -46,10 +46,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, Vee <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Edit Profile</a></li>
-            <li><a href="#">Edit Password</a></li>
+            <li><a href="profile.php">Edit Profile</a></li>
             <li class="divider"></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="signin.php">Logout</a></li>
           </ul>
         </li>
       </ul>
