@@ -207,9 +207,9 @@
 							</div>
 							<div class="operations">
 								<span class="text">Error</span>
-								<span class="glyphicon glyphicon-ok"></span>
-								<span class="text">Not Error</span>
 								<span class="glyphicon glyphicon-remove"></span>
+								<span class="text">Not Error</span>
+								<span class="glyphicon glyphicon-ok"></span>
 							</div>
 						</div>
 						<!-- /.wrapper -->
@@ -231,9 +231,9 @@
 							</div>
 							<div class="operations">
 								<span class="text">Error</span>
-								<span class="glyphicon glyphicon-ok"></span>
-								<span class="text">Not Error</span>
 								<span class="glyphicon glyphicon-remove"></span>
+								<span class="text">Not Error</span>
+								<span class="glyphicon glyphicon-ok"></span>
 							</div>
 						</div>
 						<!-- /.wrapper -->
@@ -255,9 +255,9 @@
 							</div>
 							<div class="operations">
 								<span class="text">Error</span>
-								<span class="glyphicon glyphicon-ok"></span>
-								<span class="text">Not Error</span>
 								<span class="glyphicon glyphicon-remove"></span>
+								<span class="text">Not Error</span>
+								<span class="glyphicon glyphicon-ok"></span>
 							</div>
 						</div>
 						<!-- /.wrapper -->
@@ -279,9 +279,9 @@
 							</div>
 							<div class="operations">
 								<span class="text">Error</span>
-								<span class="glyphicon glyphicon-ok"></span>
-								<span class="text">Not Error</span>
 								<span class="glyphicon glyphicon-remove"></span>
+								<span class="text">Not Error</span>
+								<span class="glyphicon glyphicon-ok"></span>
 							</div>
 						</div>
 						<!-- /.wrapper -->
@@ -303,9 +303,9 @@
 							</div>
 							<div class="operations">
 								<span class="text">Error</span>
-								<span class="glyphicon glyphicon-ok"></span>
-								<span class="text">Not Error</span>
 								<span class="glyphicon glyphicon-remove"></span>
+								<span class="text">Not Error</span>
+								<span class="glyphicon glyphicon-ok"></span>
 							</div>
 						</div>
 						<!-- /.wrapper -->
