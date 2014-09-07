@@ -64,7 +64,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-ok-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -88,7 +88,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-ok-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -112,7 +112,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-ok-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -190,7 +190,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-ok-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -214,7 +214,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-ok-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -238,7 +238,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-ok-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -262,7 +262,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-ok-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
@@ -286,7 +286,7 @@
 						<div class="wrapper">
 							<div class="text-wrapper">
 								<div class="status">
-									<i class="glyphicon glyphicon-ok-sign"></i>
+									<i class="glyphicon glyphicon-remove-sign"></i>
 								</div>
 								<div class="content">
 									<p class="list-group-item-text">2011-10-25 ถึง 2011-12-10 (66 วัน)</p>
