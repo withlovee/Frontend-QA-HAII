@@ -34,7 +34,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="activex"><a href="index.php">Monitor</a></li>
+        <li><a href="notifications.php">Monitor</a></li>
         <li><a href="correction.php">Correction</a></li>
         <li><a href="batch.php">Run Diagnosis</a></li>
         <li><a href="stat.php">Statistic</a></li>
