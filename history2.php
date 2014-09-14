@@ -1,9 +1,9 @@
 <?php include('header.php'); ?>
 		<div class="page-header">
-			<h1 class="left">Daily Operations<br><small>แสดงปัญหาที่เกิดขึ้นตั้งแต่วันที่ 14 กันยายน 2557</small></h1>
+			<h1 class="left">Error Log <small>(แสดงปัญหาทั้งหมด)</small></h1>
 			<div class="btn-group right">
-				<a href="notifications2.php" class="btn btn-default active">ดูปัญหาที่แก้ไขแล้ว</a>
-				<a href="notifications.php" class="btn btn-default">ดูปัญหาที่ยังไม่แก้ไข</a>
+				<a href="history2.php" class="btn btn-default active">ดูปัญหาที่แก้ไขแล้ว</a>
+				<a href="history.php" class="btn btn-default">ดูปัญหาที่ยังไม่แก้ไข</a>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -44,9 +44,25 @@
 							<option value="">Out-of-Range (BD)</option>
 							<option value="">Flat Value (FV)</option>
 							<option value="">Missing Gap (MG)</option>
+							<option value="">Outlier (OL)</option>
+							<option value="">Homogeneity (HM)</option>
+							<option value="">Missing Pattern (MP)</option>
 						</select>
 					</div>
-					<button type="submit" class="btn btn-primary">Go</button>
+	                <p></p>
+	                <div class="form-inline">
+	                    <div class="form-group">
+	                        <label for="">ตั้งแต่</label>
+	                        <input type="date" class="form-control">
+	                        <input type="time" class="form-control">
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="">ถึง</label>
+	                        <input type="date" class="form-control">
+	                        <input type="time" class="form-control">
+	                    </div>
+	                    <button type="submit" class="btn btn-primary">Go</button>
+	                </div>
 				</form>
 				<table class="monitor-table table table-bordered table-condensed">
 					<thead>
@@ -61,12 +77,9 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr class="heading">
-							<td colspan="7" class="text-center">ลุ่มน้ำปิง</td>
-						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">สวี2 ต.นาสัก อ.สวี จ.ชุมพร</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:00</td>
 							<td>Out-of-Range</td>
 							<td>0.86</td>
@@ -85,7 +98,7 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">เก้าเลี้ยว ต. หัวดง อ. เก้าเลี้ยว จ. นครสวรรค์</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:00</td>
 							<td>Out-of-Range</td>
 							<td>4.52</td>
@@ -104,7 +117,7 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">สามเงา ต. วังหมัน อ. สามเงา จ. ตาก</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:10</td>
 							<td>Out-of-Range</td>
 							<td>2.36</td>
@@ -123,7 +136,7 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">สามเงา ต. วังหมัน อ. สามเงา จ. ตาก</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:10</td>
 							<td>Out-of-Range</td>
 							<td>2.36</td>
@@ -142,7 +155,7 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">สันทราย ต. แม่แฝก อ. สันทราย จ. เชียงใหม่</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>20:00</td>
 							<td>Flat Value</td>
 							<td>0.43</td>
@@ -161,7 +174,7 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">เมืองลำปาง ต. ต้นธงชัย อ. เมืองลำปาง จ. ลำปาง</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:00</td>
 							<td>Out-of-Range</td>
 							<td>0.62</td>
@@ -180,7 +193,7 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">ฮอด ต. หางดง อ. ฮอด จ. เชียงใหม่</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>19:50</td>
 							<td>Missing Gap</td>
 							<td>0.86</td>
@@ -197,12 +210,9 @@
 								</a>
 							</td>
 						</tr>
-						<tr class="heading">
-							<td colspan="7" class="text-center">ลุ่มน้ำสาละวิน</td>
-						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">สวี2 ต.นาสัก อ.สวี จ.ชุมพร</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:00</td>
 							<td>Out-of-Range</td>
 							<td>0.86</td>
@@ -221,7 +231,7 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">เก้าเลี้ยว ต. หัวดง อ. เก้าเลี้ยว จ. นครสวรรค์</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:00</td>
 							<td>Out-of-Range</td>
 							<td>4.52</td>
@@ -240,7 +250,7 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">สามเงา ต. วังหมัน อ. สามเงา จ. ตาก</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:10</td>
 							<td>Out-of-Range</td>
 							<td>2.36</td>
@@ -319,12 +329,9 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr class="heading">
-							<td colspan="7" class="text-center">ลุ่มน้ำสาละวิน</td>
-						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">เมืองกำแพงเพชร ต. ลานดอกไม้ อ. เมืองกำแพงเพชร จ. กำแพงเพชร</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:00</td>
 							<td>Missing Gap</td>
 							<td>1.34</td>
@@ -343,18 +350,18 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">เก้าเลี้ยว ต. หัวดง อ. เก้าเลี้ยว จ. นครสวรรค์</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:00</td>
 							<td>Flat Value</td>
 							<td>4.52</td>
 							<td>
-								<a href="#" class="active">
+								<a href="#">
 									<span class="glyphicon glyphicon-ok"></span>
 									<span class="text">Error</span>
 								</a>
 							</td>
 							<td>
-								<a href="#">
+								<a href="#" class="active">
 									<span class="glyphicon glyphicon-remove"></span>
 									<span class="text">Not Error</span>
 								</a>
@@ -362,40 +369,37 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">สวี2 ต.นาสัก อ.สวี จ.ชุมพร</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:00</td>
 							<td>Out-of-Range</td>
 							<td>0.86</td>
 							<td>
-								<a href="#">
+								<a href="#" class="active">
 									<span class="glyphicon glyphicon-ok"></span>
 									<span class="text">Error</span>
 								</a>
 							</td>
 							<td>
-								<a href="#" class="active">
+								<a href="#">
 									<span class="glyphicon glyphicon-remove"></span>
 									<span class="text">Not Error</span>
 								</a>
 							</td>
 						</tr>
-						<tr class="heading">
-							<td colspan="7" class="text-center">ลุ่มน้ำปิง</td>
-						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">สันทราย ต. แม่แฝก อ. สันทราย จ. เชียงใหม่</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>20:00</td>
 							<td>Flat Value</td>
 							<td>0.43</td>
 							<td>
-								<a href="#" class="active">
+								<a href="#">
 									<span class="glyphicon glyphicon-ok"></span>
 									<span class="text">Error</span>
 								</a>
 							</td>
 							<td>
-								<a href="#">
+								<a href="#" class="active">
 									<span class="glyphicon glyphicon-remove"></span>
 									<span class="text">Not Error</span>
 								</a>
@@ -403,18 +407,18 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">ฮอด ต. หางดง อ. ฮอด จ. เชียงใหม่</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>19:50</td>
 							<td>Missing Gap</td>
 							<td>0.86</td>
 							<td>
-								<a href="#" class="active">
+								<a href="#">
 									<span class="glyphicon glyphicon-ok"></span>
 									<span class="text">Error</span>
 								</a>
 							</td>
 							<td>
-								<a href="#">
+								<a href="#" class="active">
 									<span class="glyphicon glyphicon-remove"></span>
 									<span class="text">Not Error</span>
 								</a>
@@ -422,7 +426,7 @@
 						</tr>
 						<tr>
 							<td><a href="" data-toggle="modal" data-target="#detail">เมืองลำปาง ต. ต้นธงชัย อ. เมืองลำปาง จ. ลำปาง</a></td>
-							<td>2014-09-14</td>
+							<td>2011-10-25</td>
 							<td>21:00</td>
 							<td>Out-of-Range</td>
 							<td>0.62</td>

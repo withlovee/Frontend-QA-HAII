@@ -240,6 +240,36 @@ a:hover{
 
 #gbox_list48{
 }
+.monitor-table{
+	background-color: #fff;
+	th{
+		text-align: center;
+	}
+	.heading{
+		td{
+			background-color: #dff0d8;
+		}
+	}
+	td:nth-child(6) a,
+	td:nth-child(7) a{
+		color: #555;
+		&:hover{
+			color: @green;
+		}
+	}
+}
+.noti-done{
+	.monitor-table{
+		td:nth-child(6) a,
+		td:nth-child(7) a{
+			color: #ccc;
+		}
+		td a.active{
+			color: green;
+			font-weight: bold;
+		}
+	}
+}
 /*-------------------------  -------------------------*/
 @media (min-width: 768px){
 .modal-dialog.large {

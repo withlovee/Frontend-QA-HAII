@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 		<div class="page-header">
-			<h1>Run Diagnosis</h1>
+			<h1>Batch Processing</h1>
 		</div>
 		<!--/.page-header -->
 
@@ -16,13 +16,11 @@
 						<div class="row">
 							<div class="form-group col-sm-6">
 								<select name="" id="" class="form-control">
-									<option value="">ภูมิภาค</option>
-									<option value="กลาง">ภาคกลาง</option>
-									<option value="ตะวันตก">ภาคตะวันตก</option>
-									<option value="ตะวันออก">ภาคตะวันออก</option>
-									<option value="ตะวันออกเฉียงเหนือ">ภาคตะวันออกเฉียงเหนือ</option>
-									<option value="ใต้">ภาคใต้</option>
-									<option value="เหนือ">ภาคเหนือ</option>
+									<option value="">ลุ่มแม่น้ำ</option>
+									<option value="แม่น้ำแม่กลอง">แม่น้ำแม่กลอง</option>
+									<option value="แม่น้ำท่าจีน">แม่น้ำท่าจีน</option>
+									<option value="แม่น้ำเพชรบุรี">แม่น้ำเพชรบุรี</option>
+									<option value="แม่น้ำสาละวิน">แม่น้ำสาละวิน</option>
 								</select>
 							</div>
 							<!-- /.col-sm-6 -->
@@ -35,21 +33,6 @@
 							<!-- /.col-sm-6 -->
 						</div>
 						<!-- /.row -->
-						<div class="row">
-							<div class="form-group col-sm-6">
-								<select name="" id="" class="form-control">
-									<option value="">อำเภอ</option>
-								</select>								
-							</div>
-							<!-- /.col-sm-6 -->
-							<div class="form-group col-sm-6">
-								<select name="" id="" class="form-control">
-									<option value="">ตำบล</option>
-								</select>								
-							</div>
-							<!-- /.col-sm-6 -->
-						</div>
-						<!-- /.row -->
 						<div class="form-group">
 							<select name="" id="" class="form-control" multiple>
 								<option value="">รหัสสถานี</option>
@@ -57,7 +40,7 @@
 						</div>
 					</div>
 					<!-- /.col-md-4 -->
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<h3>ขั้นตอนที่ 2: เลือกปัญหา</h3>
 						<div class="form-inline filters">
 							<div class="form-group">
@@ -70,7 +53,7 @@
 						</div>
 					</div>
 					<!-- /.col-md-4 -->
-					<div class="col-md-4">
+					<div class="col-md-5">
 						<h3>ขั้นตอนที่ 3: เลือกช่วงเวลา</h3>
 						<div class="form-horizontal">
 							<div class="form-group">
@@ -95,14 +78,14 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-sm-3 control-label">อีเมลไปที่</label>
+								<label for="" class="col-sm-3 control-label">อีเมล์ไปที่</label>
 								<div class="col-sm-6">
 									<input type="email" class="form-control" placeholder="vibhavee.t@gmail.com">
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-10">
-									<button type="submit" class="btn btn-lg btn-primary">Run Diagnosis</button>
+									<button type="submit" class="btn btn-lg btn-primary">Submit</button>
 								</div>
 							</div>
 						</div>
@@ -110,9 +93,7 @@
 					<!-- /.col-md-4 -->
 				</div>
 				<!-- /.row -->
-				<p></p>
-				<div class="form-inline filters">
-				</div>
+				<p>ข้อมูลที่ได้จะส่งไปยังอีเมล์ทันทีที่ระบบทำงานเสร็จ</p>
 				<p></p>
 				<p>&nbsp;</p>
 			</div>
@@ -145,14 +126,12 @@
 						<div class="row">
 							<div class="form-group col-sm-6">
 								<select name="" id="" class="form-control">
-									<option value="">อำเภอ</option>
-								</select>								
-							</div>
-							<!-- /.col-sm-6 -->
-							<div class="form-group col-sm-6">
-								<select name="" id="" class="form-control">
-									<option value="">ตำบล</option>
-								</select>								
+									<option value="">ลุ่มแม่น้ำ</option>
+									<option value="แม่น้ำแม่กลอง">แม่น้ำแม่กลอง</option>
+									<option value="แม่น้ำท่าจีน">แม่น้ำท่าจีน</option>
+									<option value="แม่น้ำเพชรบุรี">แม่น้ำเพชรบุรี</option>
+									<option value="แม่น้ำสาละวิน">แม่น้ำสาละวิน</option>
+								</select>	
 							</div>
 							<!-- /.col-sm-6 -->
 						</div>
@@ -164,7 +143,7 @@
 						</div>
 					</div>
 					<!-- /.col-md-4 -->
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<h3>ขั้นตอนที่ 2: เลือกปัญหา</h3>
 						<div class="form-inline filters">
 							<div class="form-group">
@@ -175,7 +154,7 @@
 						</div>
 					</div>
 					<!-- /.col-md-4 -->
-					<div class="col-md-4">
+					<div class="col-md-5">
 						<h3>ขั้นตอนที่ 3: เลือกช่วงเวลา</h3>
 						<div class="form-horizontal">
 							<div class="form-group">
@@ -207,7 +186,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-10">
-									<button type="submit" class="btn btn-lg btn-primary">Run Diagnosis</button>
+									<button type="submit" class="btn btn-lg btn-primary">Submit</button>
 								</div>
 							</div>
 						</div>
@@ -215,9 +194,7 @@
 					<!-- /.col-md-4 -->
 				</div>
 				<!-- /.row -->
-				<p></p>
-				<div class="form-inline filters">
-				</div>
+				<p>ข้อมูลที่ได้จะส่งไปยังอีเมล์ทันทีที่ระบบทำงานเสร็จ</p>
 				<p></p>
 				<p>&nbsp;</p>
 			</div>

@@ -1,21 +1,59 @@
 <?php include('header.php'); ?>
-<p>&nbsp;</p>
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4" id="signin">
-				<form class="form-signin" role="form" action="signin-fail.php">
-				<h2 class="form-signin-heading">Edit Profile</h2>
-				<form role="form">
-					<div class="form-group">
-						<label for="exampleInputEmail1">E-mail</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="your-email@gmail.com">
-					</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">New Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-					</div>
-					<button class="btn btn-lg btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-ok"></span> Update Profile</button>
-					<br>
-				</form>
+		<div class="page-header">
+			<h1>Edit Profile</h1>
+		</div>
+		<!--/.page-header -->
+
+<form class="form-horizontal" role="form">
+	<div class="form-group">
+		<label for="inputEmail3" class="col-sm-2 control-label">อีเมล์</label>
+		<div class="col-sm-3">
+			<input type="email" class="form-control" value="vibhavee.t@gmail.com" placeholder="your-mail@gmail.com">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputEmail3" class="col-sm-2 control-label">รหัสผ่านใหม่</label>
+		<div class="col-sm-3">
+			<input type="password" class="form-control" placeholder="******">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputEmail3" class="col-sm-2 control-label">ยืนยันรหัสผ่านใหม่</label>
+		<div class="col-sm-3">
+			<input type="password" class="form-control" placeholder="******">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<div class="checkbox">
+				<label>
+				  <input type="checkbox" checked> รับรายงาน Real-Time สำหรับปัญหา Out-Of-Range Value
+				</label>
 			</div>
-		</div><!--row-->
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<div class="checkbox">
+				<label>
+				  <input type="checkbox" checked> รับรายงานประจำวันสำหรับปัญหา Out-Of-Range, Flat Value และ Missing Gap
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<div class="checkbox">
+				<label>
+				  <input type="checkbox" checked> รับรายงานประจำเดือนของทุกปัญหา
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+	<div class="col-sm-offset-2 col-sm-10">
+	<button type="submit" class="btn btn-primary">ยืนยันการแก้ไข</button>
+	</div>
+	</div>
+</form>
 <?php include('footer.php'); ?>

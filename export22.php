@@ -1,4 +1,6 @@
 <?php include('header.php'); ?>
+<link rel="stylesheet" href="css/watable.css">
+<script src="js/jquery.watable.js"></script>
 		<div class="page-header">
 			<h1>Export</h1>
 		</div>
@@ -72,7 +74,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-10">
-									<a href="export22.php" type="submit" class="btn btn-lg btn-primary">Export</a>
+									<button type="submit" class="btn btn-lg btn-primary">Export</button>
 								</div>
 							</div>
 						</div>
@@ -80,6 +82,8 @@
 					<!-- /.col-md-4 -->
 				</div>
 				<!-- /.row -->
+				<div id="div1" class="table-full" style="width:100%"></div>
+				<button type="submit" class="btn btn-lg btn-primary">Download (ZIP)</button>
 				<p>&nbsp;</p>
 			</div>
 			<div class="tab-pane" id="rain">
@@ -160,7 +164,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-10">
-									<a href="export22.php" type="submit" class="btn btn-lg btn-primary">Export</a>
+									<button type="submit" class="btn btn-lg btn-primary">Export</button>
 								</div>
 							</div>
 						</div>
@@ -171,4 +175,191 @@
 				<p>&nbsp;</p>
 			</div>
 		</div>
+<script type="text/javascript">
+				$(document).ready( function() {
+
+					//An example with all options.
+					 var waTable = $('#div1').WATable({
+						debug:true,                 //Prints some debug info to console
+						pageSize: 10,                //Initial pagesize
+						transition: 'fade',       //Type of transition when paging (bounce, fade, flip, rotate, scroll, slide).Requires https://github.com/daneden/animate.css.
+						transitionDuration: 0.1,    //Duration of transition in seconds.
+						filter: true,               //Show filter fields
+						sorting: true,              //Enable sorting
+						sortEmptyLast:true,         //Empty values will be shown last
+						columnPicker: true,         //Show the columnPicker button
+						pageSizes: [10,50,100,"All"],  //Set custom pageSizes. Leave empty array to hide button.
+						hidePagerOnEmpty: true,     //Removes the pager if data is empty.
+						checkboxes: false,           //Make rows checkable. (Note. You need a column with the 'unique' property)
+						checkAllToggle:true,        //Show the check-all toggle
+						preFill: true,              //Initially fills the table with empty rows (as many as the pagesize).
+						//url: '/someWebservice'    //Url to a webservice if not setting data manually as we do in this example
+						//urlData: { report:1 }     //Any data you need to pass to the webservice
+						//urlPost: true             //Use POST httpmethod to webservice. Default is GET.
+						types: {                    //Following are some specific properties related to the data types
+							string: {
+								//filterTooltip: "Giggedi..."    //What to say in tooltip when hoovering filter fields. Set false to remove.
+								//placeHolder: "Type here..."    //What to say in placeholder filter fields. Set false for empty.
+							},
+							number: {
+								decimals: 1   //Sets decimal precision for float types
+							},
+							bool: {
+								//filterTooltip: false
+							},
+							date: {
+							  utc: true,            //Show time as universal time, ie without timezones.
+							  //format: 'yy/dd/MM',   //The format. See all possible formats here http://arshaw.com/xdate/#Formatting.
+							  datePicker: true      //Requires "Datepicker for Bootstrap" plugin (http://www.eyecon.ro/bootstrap-datepicker).
+							}
+						},
+						actions: false,
+						// {                //This generates a button where you can add elements.
+						//     filter: false,         //If true, the filter fields can be toggled visible and hidden.
+						//     columnPicker: false,   //if true, the columnPicker can be toggled visible and hidden.
+						//     custom: [             //Add any other elements here. Here is a refresh and export example.
+						//       // $('<a href="#" class="refresh"><span class="glyphicon glyphicon-refresh"></span>&nbsp;Refresh</a>'),
+						//       // $('<a href="#" class="export_all"><span class="glyphicon glyphicon-share"></span>&nbsp;Export all rows</a>'),
+						//       // $('<a href="#" class="export_checked"><span class="glyphicon glyphicon-share"></span>&nbsp;Export checked rows</a>'),
+						//       // $('<a href="#" class="export_filtered"><span class="glyphicon glyphicon-share"></span>&nbsp;Export filtered rows</a>')
+						//     ]
+						// },
+						tableCreated: function(data) {    //Fires when the table is created / recreated. Use it if you want to manipulate the table in any way.
+							console.log('table created'); //data.table holds the html table element.
+							console.log(data);            //'this' keyword also holds the html table element.
+						},
+						rowClicked: function(data) {      //Fires when a row is clicked (Note. You need a column with the 'unique' property).
+							console.log('row clicked');   //data.event holds the original jQuery event.
+							console.log(data);            //data.row holds the underlying row you supplied.
+														  //data.column holds the underlying column you supplied.
+														  //data.checked is true if row is checked.
+														  //'this' keyword holds the clicked element.
+							if ( $(this).hasClass('userId') ) {
+							  data.event.preventDefault();
+							  alert('You clicked userId: ' + data.row.userId);
+							}
+						},
+						columnClicked: function(data) {    //Fires when a column is clicked
+						  console.log('column clicked');  //data.event holds the original jQuery event
+						  console.log(data);              //data.column holds the underlying column you supplied
+														  //data.descending is true when sorted descending (duh)
+						},
+						pageChanged: function(data) {      //Fires when manually changing page
+						  console.log('page changed');    //data.event holds the original jQuery event
+						  console.log(data);              //data.page holds the new page index
+						},
+						pageSizeChanged: function(data) {  //Fires when manually changing pagesize
+						  console.log('pagesize changed');//data.event holds teh original event
+						  console.log(data);              //data.pageSize holds the new pagesize
+						}
+					}).data('WATable');  //This step reaches into the html data property to get the actual WATable object. Important if you want a reference to it as we want here.
+
+					//Generate some data
+					var data = getData();
+					waTable.setData(data);  //Sets the data.
+					//waTable.setData(data, true); //Sets the data but prevents any previously set columns from being overwritten
+					//waTable.setData(data, false, false); //Sets the data and prevents any previously checked rows from being reset
+
+					var allRows = waTable.getData(false); //Gets the data you previously set.
+					var checkedRows = waTable.getData(true); //Gets the data you previously set, but with checked rows only.
+					var filteredRows = waTable.getData(false, true); //Gets the data you previously set, but with filtered rows only.
+
+					var pageSize = waTable.option("pageSize"); //Get option
+					//waTable.option("pageSize", pageSize); //Set option
+
+					//Example event handler triggered by the custom refresh link above.
+					$('body').on('click', '.refresh', function(e) {
+						e.preventDefault();
+						var data = getData();
+						waTable.setData(data, true);
+					});
+					//Example event handler triggered by the custom export links above.
+					$('body').on('click', '.export_checked, .export_filtered, .export_all', function(e) {
+						e.preventDefault();
+						var elem = $(e.target);
+						var data;
+						if (elem.hasClass('export_all')) data = waTable.getData(false);
+						else if (elem.hasClass('export_checked')) data = waTable.getData(true);
+						else if (elem.hasClass('export_filtered')) data = waTable.getData(false, true);
+						console.log(data.rows.length + ' rows returned');
+						console.log(data);
+						alert(data.rows.length + ' rows returned.\nSee console for details.');
+					});
+
+				});
+
+				//Generates some data. This step is of course normally done by your web server.
+				function getData() {
+
+					//First define the columns
+					var cols = {
+						id: {
+							index: 1, //The order this column should appear in the table
+							type: "number",
+							sortOrder: "asc",
+							unique: true,
+							friendly: "ID",
+						},
+						min: {
+							index: 5,
+							type: "number",
+							friendly: "ค่าใหม่",
+						},
+						max: {
+							index: 6,
+							type: "number",
+							friendly: "ค่าเดิม",
+						},
+						beginDate: {
+							index: 1,
+							type: "date", //Don't forget dates are expressed in milliseconds
+							friendly: "วันเวลา"
+						}
+					};
+
+					/*
+					  Create the actual data.
+					  Whats worth mentioning is that you can use a 'format' property just as in the column definition,
+					  but on a row level. See below on how we create a weightFormat property. This will be used when rendering the weight column.
+					  Also, you can pre-check rows with the 'checked' property and prevent rows from being checkable with the 'checkable' property.
+					*/
+					var rows = [];
+					var i = 1;
+					while(i <= 1000)
+					{
+						var weight = (Math.floor(Math.random()*40)+15) + (Math.floor(Math.random()*100)/100);
+						var weightClass = weight <20 ? 'green' : weight <50 && weight >=20 ? 'yellow' : 'red';
+
+						//We leave some fields intentionally undefined, so you can see how sorting/filtering works with these.
+						var doc = {
+							id: i,
+							stationId: "BKK"+i,
+							stationName: "กรุงเทพ"+i,
+							num: Math.floor(Math.random()*200000),
+							missing: weight,
+							missingFormat:  "<div class='" + weightClass + "'>{0}</div>",
+							min: Math.random()*10,
+							max: Math.random()*10,
+							beginDate: Date.now() + (i*Math.floor(Math.random()*(60*60*24*100))),
+							endDate: i%4 == 0
+								? undefined
+								: Date.now() + (i*Math.floor(Math.random()*(60*60*24*100))),
+						};
+						rows.push(doc);
+						i++;
+					}
+
+					//Create the returning object. Besides cols and rows, you can also pass any other object you would need later on.
+					var data = {
+						cols: cols,
+						rows: rows,
+						otherStuff: {
+							thatIMight: 1,
+							needLater: true
+						}
+					};
+
+					return data;
+				}
+			</script>
 <?php include('footer.php'); ?>
