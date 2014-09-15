@@ -181,13 +181,13 @@
 					//An example with all options.
 					 var waTable = $('#div1').WATable({
 						debug:true,                 //Prints some debug info to console
-						pageSize: 10,                //Initial pagesize
+						pageSize: 20,                //Initial pagesize
 						transition: 'fade',       //Type of transition when paging (bounce, fade, flip, rotate, scroll, slide).Requires https://github.com/daneden/animate.css.
 						transitionDuration: 0.1,    //Duration of transition in seconds.
-						filter: true,               //Show filter fields
-						sorting: true,              //Enable sorting
-						sortEmptyLast:true,         //Empty values will be shown last
-						columnPicker: true,         //Show the columnPicker button
+						filter: false,               //Show filter fields
+						sorting: false,              //Enable sorting
+						sortEmptyLast:false,         //Empty values will be shown last
+						columnPicker: false,         //Show the columnPicker button
 						pageSizes: [10,50,100,"All"],  //Set custom pageSizes. Leave empty array to hide button.
 						hidePagerOnEmpty: true,     //Removes the pager if data is empty.
 						checkboxes: false,           //Make rows checkable. (Note. You need a column with the 'unique' property)
@@ -325,7 +325,7 @@
 					*/
 					var rows = [];
 					var i = 1;
-					while(i <= 1000)
+					while(i <= 10)
 					{
 						var weight = (Math.floor(Math.random()*40)+15) + (Math.floor(Math.random()*100)/100);
 						var weightClass = weight <20 ? 'green' : weight <50 && weight >=20 ? 'yellow' : 'red';

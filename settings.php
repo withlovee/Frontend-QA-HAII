@@ -46,36 +46,35 @@
 				<div id="div1" class="table-full" style="width:100%"></div>
 				<table id="list48"></table>
 				<div id="plist48"></div>
-				<button id="edit">Edit</button>
 <script>
 var mydata = [
-		{action:"", id:"BKK1",gapmax:"14",flatmax:"1",note:"note",boundmin:"10.00",total:"2111.00"} ,
-		{action:"", id:"BKK2",gapmax:"15",flatmax:"12",note:"note2",boundmin:"20.00",total:"320.00"},
-		{action:"", id:"BKK3",gapmax:"11",flatmax:"13",note:"note3",boundmin:"30.00",total:"430.00"},
-		{action:"", id:"BKK4",gapmax:"14",flatmax:"1",note:"note",boundmin:"10.00",total:"210.00"},
-		{action:"", id:"BKK5",gapmax:"15",flatmax:"12",note:"note2",boundmin:"20.00",total:"320.00"},
-		{action:"", id:"BKK6",gapmax:"16",flatmax:"13",note:"note3",boundmin:"30.00",total:"430.00"},
-		{action:"", id:"BKK7",gapmax:"14",flatmax:"1",note:"note",boundmin:"10.00",total:"210.00"},
-		{action:"", id:"BKK8",gapmax:"13",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"21.00",total:"320.00"},
-		{action:"", id:"BKK9",gapmax:"11",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",total:"430.00"},
-		{action:"", id:"BKK11",gapmax:"11",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",total:"210.00"},
-		{action:"", id:"BKK12",gapmax:"12",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",total:"320.00"},
-		{action:"", id:"BKK13",gapmax:"11",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",total:"430.00"},
-		{action:"", id:"BKK14",gapmax:"14",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",total:"210.00"},
-		{action:"", id:"BKK15",gapmax:"15",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",total:"320.00"},
-		{action:"", id:"BKK16",gapmax:"16",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",total:"430.00"},
-		{action:"", id:"BKK17",gapmax:"14",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",total:"210.00"},
-		{action:"", id:"BKK18",gapmax:"13",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",total:"320.00"},
-		{action:"", id:"BKK19",gapmax:"11",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",total:"430.00"},
-		{action:"", id:"BKK21",gapmax:"11",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",total:"210.00"},
-		{action:"", id:"BKK22",gapmax:"12",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",total:"320.00"},
-		{action:"", id:"BKK23",gapmax:"11",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",total:"430.00"},
-		{action:"", id:"BKK24",gapmax:"14",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",total:"210.00"},
-		{action:"", id:"BKK25",gapmax:"15",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",total:"320.00"},
-		{action:"", id:"BKK26",gapmax:"16",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",total:"430.00"},
-		{action:"", id:"BKK27",gapmax:"14",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",total:"210.00"},
-		{action:"", id:"BKK28",gapmax:"13",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",total:"320.00"},
-		{action:"", id:"BKK29",gapmax:"11",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",total:"430.00"}
+		{action:"", id:"BKK1",gapmax:"14",flatmax:"1",note:"note",boundmax:"300.00",boundmin:"10.00",bounddiff:"2111.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK2",gapmax:"15",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",bounddiff:"320.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK3",gapmax:"11",flatmax:"13",note:"note3",boundmax:"300.00",boundmin:"30.00",bounddiff:"430.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK4",gapmax:"14",flatmax:"1",note:"note",boundmax:"300.00",boundmin:"10.00",bounddiff:"210.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK5",gapmax:"15",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",bounddiff:"320.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK6",gapmax:"16",flatmax:"13",note:"note3",boundmax:"300.00",boundmin:"30.00",bounddiff:"430.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK7",gapmax:"14",flatmax:"1",note:"note",boundmax:"300.00",boundmin:"10.00",bounddiff:"210.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK8",gapmax:"13",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"21.00",bounddiff:"320.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK9",gapmax:"11",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",bounddiff:"430.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK11",gapmax:"11",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",bounddiff:"210.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK12",gapmax:"12",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",bounddiff:"320.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK13",gapmax:"11",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",bounddiff:"430.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK14",gapmax:"14",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",bounddiff:"210.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK15",gapmax:"15",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",bounddiff:"320.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK16",gapmax:"16",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",bounddiff:"430.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK17",gapmax:"14",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",bounddiff:"210.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK18",gapmax:"13",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",bounddiff:"320.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK19",gapmax:"11",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",bounddiff:"430.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK21",gapmax:"11",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",bounddiff:"210.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK22",gapmax:"12",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",bounddiff:"320.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK23",gapmax:"11",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",bounddiff:"430.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK24",gapmax:"14",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",bounddiff:"210.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK25",gapmax:"15",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",bounddiff:"320.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK26",gapmax:"16",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",bounddiff:"430.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK27",gapmax:"14",flatmax:"1",note:"note",boundmax:"200.00",boundmin:"10.00",bounddiff:"210.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK28",gapmax:"13",flatmax:"12",note:"note2",boundmax:"300.00",boundmin:"20.00",bounddiff:"320.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"},
+		{action:"", id:"BKK29",gapmax:"11",flatmax:"13",note:"note3",boundmax:"400.00",boundmin:"30.00",bounddiff:"430.00", missingeps: "5", missinggap: "6", missingday: "3", outliereps: "5", outliermin: "2"}
 	];
 table = jQuery("#list48");
 lastSel = null;

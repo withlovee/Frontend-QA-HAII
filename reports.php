@@ -276,11 +276,11 @@
 						},
 						num: {
 							index: 3,
-							type: "number",
+							type: "string",
 							friendly: "จำนวนข้อมูล",
 							hidden: false,
-							sorting: true, //dont allow sorting
-							filter: true //Removes filter field for this column
+							sorting: false, //dont allow sorting
+							filter: false //Removes filter field for this column
 						},
 						bd: {
 							index: 4,
@@ -336,25 +336,25 @@
 					var i = 1;
 					while(i <= 1000)
 					{
-						var bd = (Math.floor(Math.random()*50)+1) + (Math.floor(Math.random()*100)/100);
-						var fv = (Math.floor(Math.random()*50)+1) + (Math.floor(Math.random()*100)/100);
-						var mg = (Math.floor(Math.random()*50)+1) + (Math.floor(Math.random()*100)/100);
-						var ol = (Math.floor(Math.random()*50)+1) + (Math.floor(Math.random()*100)/100);
-						var hm = (Math.floor(Math.random()*50)+1) + (Math.floor(Math.random()*100)/100);
-						var mp = (Math.floor(Math.random()*50)+1) + (Math.floor(Math.random()*100)/100);
-						var bdClass = bd <10 ? 'green' : bd <50 && bd >=10 ? 'yellow' : 'red';
-						var fvClass = fv <10 ? 'green' : fv <50 && fv >=10 ? 'yellow' : 'red';
-						var mgClass = mg <10 ? 'green' : mg <50 && mg >=10 ? 'yellow' : 'red';
-						var olClass = ol <10 ? 'green' : ol <50 && ol >=10 ? 'yellow' : 'red';
-						var hmClass = hm <10 ? 'green' : hm <50 && hm >=10 ? 'yellow' : 'red';
-						var mpClass = mp <10 ? 'green' : mp <50 && mp >=10 ? 'yellow' : 'red';
+						var bd = (Math.floor(Math.random()*6)+1) + (Math.floor(Math.random()*100)/100);
+						var fv = (Math.floor(Math.random()*6)+1) + (Math.floor(Math.random()*100)/100);
+						var mg = (Math.floor(Math.random()*6)+1) + (Math.floor(Math.random()*100)/100);
+						var ol = (Math.floor(Math.random()*6)+1) + (Math.floor(Math.random()*100)/100);
+						var hm = (Math.floor(Math.random()*6)+1) + (Math.floor(Math.random()*100)/100);
+						var mp = (Math.floor(Math.random()*6)+1) + (Math.floor(Math.random()*100)/100);
+						var bdClass = bd <4 ? 'green' : bd <50 && bd >=4 ? 'yellow' : 'red';
+						var fvClass = fv <4 ? 'green' : fv <50 && fv >=4 ? 'yellow' : 'red';
+						var mgClass = mg <4 ? 'green' : mg <50 && mg >=4 ? 'yellow' : 'red';
+						var olClass = ol <4 ? 'green' : ol <50 && ol >=4 ? 'yellow' : 'red';
+						var hmClass = hm <4 ? 'green' : hm <50 && hm >=4 ? 'yellow' : 'red';
+						var mpClass = mp <4 ? 'green' : mp <50 && mp >=4 ? 'yellow' : 'red';
 
 						//We leave some fields intentionally undefined, so you can see how sorting/filtering works with these.
 						var doc = {
 							id: i,
 							stationId: "BKK"+i,
 							stationName: "กรุงเทพ"+i,
-							num: Math.floor(Math.random()*200000),
+							num: Math.floor(Math.random()*200000).toLocaleString(),
 							bd: bd,
 							bdFormat:  "<div class='" + bdClass + "'>{0}</div>",
 							fv: fv,

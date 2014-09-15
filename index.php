@@ -120,7 +120,7 @@
 					<!-- /.col-md-8 -->
 				</div>
 				<!-- /.row -->
-				<h3>รานงานของวันที่ 14 กันยายน 2557 (เมื่อวาน)</h3>
+				<h3>รายงานของวันที่ 14 กันยายน 2557 (เมื่อวาน)</h3>
 				<div class="row">
 					<div class="col-sm-6">
 						<h4>ข้อมูลน้ำ</h4>
@@ -135,4 +135,38 @@
 				</div>
 				<!-- /.row -->
 				<p>&nbsp;</p>
+
+<div class="modal fade" id="detail">
+	<div class="modal-dialog large">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">ข้อมูลระดับน้ำของสถานีสวี2 (SVI002)</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-3">
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<dl class="dl-horizontal dl-space">
+							<dt>สถานี</dt><dd>สวี2 (SVI002)</dd>
+							<dt>ตำบล</dt><dd>นาสัก</dd>
+							<dt>อำเภอ</dt><dd>สวี</dd>
+							<dt>จังหวัด</dt><dd>ชุมพร</dd>
+							<dt>ภูมิภาค</dt><dd>ใต้</dd>
+							<dt>ลุ่มแม่น้ำ</dt><dd>แม่น้ำป่าสัก</dd>
+						</dl>
+					</div>
+					<!-- /.col-md-6 -->
+					<div class="col-md-9">
+					<img src="img/graph.png" alt="">
+						
+					</div>
+					<!-- /.col-md-9 -->
+				</div>
+				<!-- /.row -->
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <?php include('footer.php'); ?>

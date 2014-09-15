@@ -72,7 +72,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-10">
-									<a href="export22.php" type="submit" class="btn btn-lg btn-primary">Export</a>
+									<a href="export.php" type="submit" class="btn btn-lg btn-primary">Export</a>
 								</div>
 							</div>
 						</div>
@@ -160,7 +160,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-10">
-									<a href="export22.php" type="submit" class="btn btn-lg btn-primary">Export</a>
+									<a href="export.php" type="submit" class="btn btn-lg btn-primary">Export</a>
 								</div>
 							</div>
 						</div>
